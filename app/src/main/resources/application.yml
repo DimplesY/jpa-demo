@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mysql:3306/demo?characterencoding=utf8mb4
     username: root
-    password: yanjie
+    password: 123456
   data:
     redis:
       host: redis
@@ -27,4 +27,3 @@ spring:
         tcp:
           connect-timeout: 10s
           read-timeout: 5s
-

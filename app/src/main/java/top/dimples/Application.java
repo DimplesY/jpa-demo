@@ -1,14 +1,16 @@
 package top.dimples;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Slf4j
+/**
+ * @author Dimples_YJ
+ * @create 2024/9/21
+ */
 @SpringBootApplication
-public class MyServerApplication {
+public class Application {
 
     public static void main(String[] args) {
-       SpringApplication.run(MyServerApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
