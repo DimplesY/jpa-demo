@@ -15,7 +15,6 @@ class MyServerApplicationTests {
 
     @Test
     void contextLoads() {
-        customerRepository.save(new Customer("颜", "杰"));
     }
 
 }
