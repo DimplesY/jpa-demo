@@ -1,0 +1,20 @@
+services:
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '6379'
+    labels:
+      org.springframework.boot.service-connection: redis
+  #      org.springframework.boot.readiness-check.tcp.disable: true
+
+  mysql:
+    image: 'mysql:latest'
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: yanjie
+      MYSQL_DATABASE: demo
+      TZ: Asia/Shanghai
+    labels:
+      org.springframework.boot.service-connection: mysql
+
